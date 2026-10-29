@@ -19,7 +19,7 @@ Open **☰** on the home page and scroll to **Updates**. Each part shows the ins
 
 **Update** on a row updates that part; **Update all** does everything. Printer Buddy restarts when it's done and the page reloads by itself. Prints on the printers keep going.
 
-Tier menus (Interface basic/advanced, Camera streamer tier, AI model) switch that part and download it straight away.
+Tier menus (Camera streamer tier, AI model) switch that part and download it straight away.
 
 ## Stable and nightly
 

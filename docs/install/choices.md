@@ -4,18 +4,18 @@ The installer asks these when you install, and you can change them later with **
 
 | Choice | Options (first = default) |
 |---|---|
-| Interface | basic, advanced |
+| Interface | advanced (basic is coming soon) |
 | AI detection | off, basic, heavy |
 | Video | snapshots, live, timelapse |
 | Notifications | basic, advanced |
 | Remote access | off, on |
-| Camera streamer | off, light, basic, full |
+| Camera streamer | off, light, basic, advanced |
 | Release channel | stable, nightly |
 
 ## Interface
 
-- **basic** &mdash; dashboard, Quick View and each printer's status page.
-- **advanced** &mdash; everything in basic, plus Control, Console, Files, History, list view and printer groups.
+- **advanced** &mdash; dashboard, Quick View, each printer's status page, plus Control, Console, Files, History, list view and printer groups.
+- **basic** &mdash; coming soon. It shows greyed out in the menu and can't be picked yet.
 
 ## AI detection
 
@@ -43,12 +43,16 @@ See [AI failure detection](../using/ai.md).
 
 ## Camera streamer
 
-- **off** &mdash; streamer not installed.
-- **light** &mdash; one camera, MJPEG (ustreamer).
-- **basic** &mdash; every USB / Pi camera, MJPEG (ustreamer).
-- **full** &mdash; adds network cameras and WebRTC (go2rtc); needs more CPU.
+In **2) Change setup** pick a level, then say where the camera is plugged in (this box or the printer):
 
-See [Camera streamer](../using/camera-streamer.md).
+- **off** &mdash; streamer not installed.
+- **light** &mdash; USB cameras, MJPEG (mjpg-streamer).
+- **basic** &mdash; USB cameras, MJPEG (ustreamer).
+- **advanced** &mdash; everything above, plus Pi cameras, network cameras (RTSP / IP) and WebRTC (go2rtc); needs more CPU.
+
+Any number of cameras at every level. For network cameras on this box, put each address as `device:` in `data/streamer.conf` after the install.
+
+If the camera is on the printer, the installer shows how to install the streamer there. See [Camera streamer](../using/camera-streamer.md#on-the-printer).
 
 ## Release channel
 

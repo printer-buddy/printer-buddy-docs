@@ -33,6 +33,6 @@ Something else took port 8080. Run `./install.sh`, pick **P) Change port** and c
 
 | Log | Where |
 |---|---|
-| Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host, or **6) Show logs** in the installer |
+| Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host, or **5) Show logs** in the installer |
 | Klipper | `klippy.log` &mdash; link in the error banner |
 | Moonraker | `moonraker.log` &mdash; link in the warnings banner |

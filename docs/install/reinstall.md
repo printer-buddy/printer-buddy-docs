@@ -1,4 +1,4 @@
-# Reinstall, back up and remove
+# Reinstall, back up and uninstall
 
 Everything here is in the installer menu: run `./install.sh` in the Printer Buddy folder.
 
@@ -18,9 +18,9 @@ Use it if something got broken or after changing a lot by hand.
 !!! tip
     Make a backup before big changes, and copy the `backups/` folder somewhere else now and then.
 
-## Remove
+## Uninstall
 
-**7) Remove** stops and removes the Printer Buddy service. It then asks, one at a time, whether to also delete:
+**6) Uninstall** stops and removes the Printer Buddy service. It then asks, one at a time, whether to also delete:
 
 - the Python environment (`.venv`)
 - your printers and settings (`data/`) &mdash; make a backup first if you're unsure
