@@ -14,7 +14,7 @@ The sidebar on the left holds the page's tabs. Each tab is made of panels (statu
 | Button | What it does |
 |---|---|
 | **Save config** | Only shows when Klipper has unsaved changes &mdash; see below |
-| Theme | Auto, light or dark |
+| Theme | Light or dark |
 | Pause / Cancel | Pause or cancel the current print |
 | Emergency stop | Stops the printer immediately |
 | **☰** | The [printer drawer](drawers.md): restarts, host power, services |
