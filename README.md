@@ -1,6 +1,6 @@
 # Printer Buddy Docs
 
-Source for https://sterling5241.github.io/printer-buddy-docs (MkDocs Material). Pages are in `docs/`, the menu is `nav` in `mkdocs.yml`.
+Source for https://printer-buddy.github.io/printer-buddy-docs (MkDocs Material). Pages are in `docs/`, the menu is `nav` in `mkdocs.yml`.
 
 Preview locally:
 

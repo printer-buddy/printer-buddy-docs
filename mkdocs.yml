@@ -1,12 +1,12 @@
 # Project information
 site_name: Printer Buddy Docs
-site_url: https://sterling5241.github.io/printer-buddy-docs
+site_url: https://printer-buddy.github.io/printer-buddy-docs
 site_author: sterling5241
 
 # Repository
-repo_name: sterling5241/printer-buddy
-repo_url: https://github.com/sterling5241/printer-buddy
-edit_uri: https://github.com/sterling5241/printer-buddy-docs/edit/main/docs/
+repo_name: printer-buddy/printer-buddy
+repo_url: https://github.com/printer-buddy/printer-buddy
+edit_uri: https://github.com/printer-buddy/printer-buddy-docs/edit/main/docs/
 
 theme:
   name: material
@@ -74,7 +74,7 @@ plugins:
 extra:
   social:
     - icon: simple/github
-      link: https://github.com/sterling5241/printer-buddy
+      link: https://github.com/printer-buddy/printer-buddy
 
 # Extensions
 markdown_extensions:

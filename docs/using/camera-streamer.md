@@ -23,7 +23,7 @@ Each printer's cameras come from Moonraker. On a printer page, the camera's sett
 
 If the camera is plugged into the printer itself, run the streamer there. In **Change setup** pick **Camera streamer**, a level, then **The printer**. The installer offers two ways to install it:
 
-- **Copy and paste** &mdash; it shows one command to run over SSH on the printer, for example `curl -fsSL https://raw.githubusercontent.com/sterling5241/print-buddy-streamer/main/install-printer.sh | bash -s -- basic`.
+- **Copy and paste** &mdash; it shows one command to run over SSH on the printer, for example `curl -fsSL https://raw.githubusercontent.com/printer-buddy/print-buddy-streamer/main/install-printer.sh | bash -s -- basic`.
 - **Guided SSH** &mdash; it asks for the printer's IP and login user (default `pi`) and runs the same command over SSH. SSH asks for the printer's password; nothing is saved.
 
 For **advanced** it also asks for network camera addresses and adds them to the command.

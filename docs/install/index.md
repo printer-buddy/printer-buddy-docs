@@ -50,7 +50,7 @@ Readings from real setups. More coming as members send theirs.
 Same for both: SSH in and run
 
 ```bash
-git clone https://github.com/sterling5241/printer-buddy.git
+git clone https://github.com/printer-buddy/printer-buddy.git
 cd printer-buddy
 ./install.sh
 ```
