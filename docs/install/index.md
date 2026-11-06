@@ -55,7 +55,9 @@ cd printer-buddy
 ./install.sh
 ```
 
-The installer opens a menu. Pick **1) Install** and answer the setup questions (see [Install choices](choices.md)), or install with the defaults and no questions:
+The first time you run it, the installer welcomes you and walks through the setup choices one at a time, from **Step 1 of 7** to **Step 7 of 7** (see [Install choices](choices.md)). Enter keeps the suggested answer for any step. At the end it asks **Install Printer Buddy now? [Y/n]**.
+
+After that, every run opens a menu. Pick **1) Install** to install or reinstall, **2) Change setup** to change a choice, and so on. To install with the defaults and no questions:
 
 ```bash
 ./install.sh -y
@@ -66,6 +68,9 @@ It sets up a Python environment, downloads the parts you picked, creates the `pr
 ```
 http://<its-ip>:8080
 ```
+
+!!! note "Nightly for now"
+    The guided first run is on nightly and comes to stable with the next release. On stable, **1) Install** installs with the default choices. Use **2) Change setup** to change them first, or afterwards.
 
 ## Adding printers
 

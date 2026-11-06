@@ -75,6 +75,8 @@ extra:
   social:
     - icon: simple/github
       link: https://github.com/printer-buddy/printer-buddy
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/qndnY6WMPx
 
 # Extensions
 markdown_extensions:

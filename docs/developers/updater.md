@@ -33,4 +33,4 @@ The installer updates the helper; the app can't change it.
 | `PB_CHANNEL` | `stable` or `nightly` for everything |
 | `PB_NIGHTLY` | Parts on dev/beta builds, e.g. `ui,streamer` |
 
-Core follows the `builds` branch on stable and `nightly` on nightly.
+Core follows the `main` branch on stable and `nightly` on nightly.

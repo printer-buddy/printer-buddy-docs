@@ -43,14 +43,13 @@ See [AI failure detection](../using/ai.md).
 
 ## Camera streamer
 
-In **2) Change setup** pick a level, then say where the camera is plugged in (this box or the printer):
+In **2) Change setup** the installer first asks **Use Printer Buddy's camera streamer? It replaces Crowsnest (or any camera service already on the printer).** Answer **No** to keep what you have (the same as the old **off**), or **Yes** to pick a level:
 
-- **off** &mdash; streamer not installed.
 - **light** &mdash; USB cameras, MJPEG (mjpg-streamer).
 - **basic** &mdash; USB cameras, MJPEG (ustreamer).
 - **advanced** &mdash; everything above, plus Pi cameras, network cameras (RTSP / IP) and WebRTC (go2rtc); needs more CPU.
 
-Any number of cameras at every level. For network cameras on this box, put each address as `device:` in `data/streamer.conf` after the install.
+Then it asks where the camera is plugged in (this box or the printer). Any number of cameras at every level. The installer doesn't ask for network camera addresses. For network cameras on this box, put each address as `device:` in `data/streamer.conf` after the install.
 
 If the camera is on the printer, the installer shows how to install the streamer there. See [Camera streamer](../using/camera-streamer.md#on-the-printer).
 

@@ -14,10 +14,10 @@
 
 The installer downloads the parts into the main checkout: `ui/`, `app/core/notify.py`, `app/media/timelapse.py` and `streamer/` (all gitignored).
 
-## Branches (main repo)
+## Branches
 
-- **nightly** &mdash; the default branch, where development happens.
-- **builds** &mdash; stable; moved forward when a core version is released.
+- **nightly** &mdash; the default branch in the core, UI, notify and streamer repos, where development happens.
+- **main** &mdash; stable. The release workflow moves it forward when a version is released, so don't commit to it. The timelapse, relay and docs repos only have `main`.
 
 ## Running it locally
 
