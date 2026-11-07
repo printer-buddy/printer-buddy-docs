@@ -1,0 +1,45 @@
+.pb-home {
+  --pb-orange: #ff8a1f;
+  --pb-purple: #2e1065;
+  --pb-lilac: #a78bfa;
+  color: #f4f2f8;
+  background:
+    radial-gradient(900px 520px at 85% -10%, rgba(76, 29, 149, .55), transparent 60%),
+    radial-gradient(700px 500px at -10% 35%, rgba(255, 138, 31, .16), transparent 60%),
+    #0b0b0d;
+  padding: 0 1.2rem 4rem;
+}
+
+.pb-hero { max-width: 52rem; margin: 0 auto; padding: 5.5rem 0 3.5rem; text-align: center; }
+.pb-kicker { display: inline-block; margin: 0 0 1.2rem; padding: .3rem .9rem; border: 1px solid rgba(167, 139, 250, .5);
+  border-radius: 99px; color: var(--pb-lilac); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.pb-hero h1 { margin: 0 0 1.2rem; color: #fff; font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; }
+.pb-hero h1 span { color: var(--pb-orange); }
+.pb-lead { max-width: 40rem; margin: 0 auto 2rem; color: #c9c5d4; font-size: 1.05rem; line-height: 1.6; }
+.pb-buttons { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin: 0 0 1rem; }
+.pb-home .md-button { border-radius: 10px; padding: .7em 1.4em; }
+.pb-home .md-button--primary { background: var(--pb-orange); border-color: var(--pb-orange); color: #1a1005; }
+.pb-home .md-button:not(.md-button--primary) { color: #fff; border-color: #4c1d95; background: var(--pb-purple); }
+.pb-home .md-button:hover { filter: brightness(1.1); }
+.pb-small { color: #8e8a99; font-size: .8rem; }
+.pb-small a, .pb-steps a:not(.md-button) { color: var(--pb-lilac); }
+
+.pb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; max-width: 64rem; margin: 0 auto; }
+.pb-card { display: block; padding: 1.4rem; border: 1px solid #26242c; border-radius: 14px;
+  background: #17161b; color: inherit; transition: border-color .15s, transform .15s, background .15s; }
+.pb-card:hover { border-color: #4c1d95; background: #1f1e24; transform: translateY(-2px); color: inherit; }
+.pb-card svg { width: 2rem; height: 2rem; fill: none; stroke: var(--pb-orange); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pb-card h3 { margin: .8rem 0 .4rem; color: #fff; font-size: 1.05rem; font-weight: 700; }
+.pb-card p { margin: 0; color: #a9a5b5; font-size: .85rem; line-height: 1.55; }
+
+.pb-steps { max-width: 52rem; margin: 4.5rem auto 0; text-align: center; }
+.pb-steps h2 { margin: 0 0 1.8rem; color: #fff; font-size: 1.6rem; font-weight: 800; }
+.pb-steps ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; margin: 0 0 2rem; padding: 0;
+  list-style: none; counter-reset: step; text-align: left; }
+.pb-steps li { position: relative; margin: 0; padding: 1.2rem 1.2rem 1.2rem 3.6rem; border-radius: 14px; background: #17161b; border: 1px solid #26242c;
+  counter-increment: step; }
+.pb-steps li::before { content: counter(step); position: absolute; left: 1.1rem; top: 1.1rem; width: 1.8rem; height: 1.8rem; border-radius: 50%;
+  display: grid; place-items: center; background: var(--pb-purple); color: #fff; font-weight: 800; font-size: .85rem; }
+.pb-steps li b { display: block; color: #fff; margin-bottom: .2rem; }
+.pb-steps li span { color: #a9a5b5; font-size: .85rem; line-height: 1.5; }
+.pb-steps code { font-size: .8rem; }
