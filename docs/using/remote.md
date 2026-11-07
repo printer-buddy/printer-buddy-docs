@@ -36,6 +36,26 @@ You see the same chat in the **Share** window in Printer Buddy and can write in 
 - The last 100 messages are kept in memory. They're gone when Printer Buddy restarts.
 - A link that's turned off or has expired loses the chat too.
 
+### Push notifications
+
+Open **Alerts and blocked words** in the chat part of the Share window and pick **Notify me with a push**. It uses the notification service you set up in Settings.
+
+- **Never**: chat stays quiet. You only see it when you open the window.
+- **Only when a viewer flags the print** (the default).
+- **For every message**: at most one push every 20 seconds, saying how many more came in.
+
+### Flag button
+
+Next to **Send**, viewers have a **Flag** button for when they spot something the AI missed. It asks them to confirm, then sends you a push with a camera picture, using whatever they typed (up to 100 characters) as the reason. The flag also shows in the chat. Flags always push unless alerts are set to **Never**. A viewer can flag once a minute, and a printer takes at most 5 flags in 10 minutes.
+
+### Blocked words
+
+The same section has a list of words that aren't allowed, one per line. A message or name containing one is refused and the viewer is told so, and they can't send or flag anything for 10 seconds. You see the attempt in your chat window, in grey, with the name and what they typed. Other viewers never see it, and you aren't sent a push for it. It's saved in `chat-blocklist.txt` next to the database, so you can edit that file instead if you prefer. On top of your list, a built-in list of common swear words, insults and slurs is blocked. Untick **Also block the built-in list** to turn it off. It can't catch every spelling, and it only blocks whole words, so ordinary words like "class" or "assist" are fine.
+
+- `word` blocks that whole word only, `two words` blocks the phrase.
+- `word*` blocks any word that starts with it, `*word` any word that ends with it, and `*word*` blocks it anywhere, even inside other words.
+- Capitals, accents, look-alikes (`1` for `i`, `0` for `o`, `@` for `a`) and spaces between letters (`b a d`) are caught.
+
 !!! note "Nightly for now"
     Chat is on nightly and comes to stable with the next release. For viewers coming in through remote access, the relay also has to be updated, which happens when its repository is pushed.
 
