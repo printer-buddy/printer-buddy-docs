@@ -112,14 +112,19 @@ markdown_extensions:
       custom_checkbox: true
 
 # Page tree
+# per-printer feature pages, linked from Features but not in the menu
+not_in_nav: |
+  /printers/
+
 nav:
   - Home: index.md
+  - Features: features.md
   - Install:
       - install/index.md
       - install/choices.md
       - install/reinstall.md
   - Using it:
-      - using/dashboard.md
+      - using/home.md
       - using/printer-page.md
       - using/drawers.md
       - using/ai.md

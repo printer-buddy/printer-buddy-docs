@@ -8,8 +8,12 @@ Open all of Printer Buddy from anywhere, with a login. Today, remote access is [
 
 ## More printers
 
-Klipper is supported today. Support for more printers is being added over time.
+Supported today:
 
-## 32-bit AI
+| | Printers |
+|---|---|
+| **Klipper** | Any printer running Klipper and Moonraker, with extras for the Creality K2 (CFS), Snapmaker U1, Happy Hare and AFC (Box Turtle, Night Owl…) filament changers, and toolchangers |
+| **Bambu Lab** | X1 Carbon, X1, X1E, P1P, P1S, P2S, A1 mini, A1, A2L, X2D, H2C, H2D, H2D Pro, H2S, H3C |
+| **Elegoo** | Centauri Carbon (CC1) and Centauri Carbon 2 (CC2) |
 
-A 32-bit version of the **lite** AI model, so AI detection works on 32-bit systems too. Today the AI needs a 64-bit system.
+More printers are being added over time.
