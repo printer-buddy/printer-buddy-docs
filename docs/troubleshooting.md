@@ -8,7 +8,7 @@
 
 ## Klipper errors
 
-The red banner on the printer page shows Klipper's error. Fix what it says (often a typo in `printer.cfg`), then press **Restart**. If Klipper isn't connected at all, try **Restart service**, then look at `klippy.log` (link in the banner).
+The **Klippy** card at the top of the printer page shows Klipper's error. Fix what it says (often a typo in `printer.cfg`), then press **Restart Klipper** (or **Firmware Restart** for an MCU error). If Klipper isn't connected at all, restart the Klipper service from the **☰** drawer, then look at `klippy.log` (download button on the card).
 
 ## An update failed
 
@@ -34,5 +34,5 @@ Something else took port 8080. Run `./install.sh`, pick **P) Change port** and c
 | Log | Where |
 |---|---|
 | Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host, or **5) Show logs** in the installer |
-| Klipper | `klippy.log` &mdash; link in the error banner |
-| Moonraker | `moonraker.log` &mdash; link in the warnings banner |
+| Klipper | `klippy.log` &mdash; on the **Klippy** card, or **System → System Overview** |
+| Moonraker | `moonraker.log` &mdash; on the **Klippy** card, or **System → System Overview** |

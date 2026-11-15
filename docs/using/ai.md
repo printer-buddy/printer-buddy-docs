@@ -10,11 +10,12 @@ Spaghetti, warping, first-layer problems, stringing, blobs, cracks and other fai
 
 | Model | Runs on | Notes |
 |---|---|---|
+| **lite** | Any host, 32-bit or 64-bit, very little memory | The smallest model, a bit less accurate. Runs without the AI libraries the others need |
 | **basic** | A Raspberry Pi (64-bit) | Pick this on a Pi |
 | **heavy** | A strong PC or a GPU | The most accurate |
 
-!!! note "64-bit only for now"
-    The AI needs a 64-bit system (Raspberry Pi OS 64-bit, or any x86_64 PC). A 32-bit version of the **lite** model is planned (lite only).
+!!! note "64-bit for basic and heavy"
+    **basic** and **heavy** need a 64-bit system (Raspberry Pi OS 64-bit, or any x86_64 PC). **lite** runs on 32-bit systems too.
 
 !!! note "NVIDIA GPU (nightly builds for now)"
     **heavy** can use an NVIDIA GPU. If the host has a working NVIDIA driver (`nvidia-smi` works), the installer sets up the GPU version of the AI libraries. The GPU also needs NVIDIA's CUDA and cuDNN libraries installed on the host; without them it runs on the CPU. **Settings → AI** shows what the model runs on.
@@ -23,7 +24,7 @@ Pick one with **AI detection** in the installer. Every model release is tested o
 
 ## When it alerts
 
-It checks the camera every few seconds while a printer prints, and only alerts after **several checks in a row** look bad, so one odd frame doesn't set it off. Change these in **Settings → AI**:
+It checks the camera every few seconds while a printer prints, and only alerts after **several checks in a row** look bad, so one odd frame doesn't set it off. Change these in the home page's **Settings → AI**, or on a printer's **Settings** tab under **AI Detection**:
 
 | Setting | Choices | Default |
 |---|---|---|

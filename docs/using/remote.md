@@ -16,7 +16,7 @@ Share a printer's view with someone else. Links look like:
 https://www.printerbuddy.stream/share/user/<your id>/...
 ```
 
-To make one, open the menu on a printer's card on the dashboard and choose **Share**. It only shows when remote access is on. Pick how long the link works:
+To make one, open the menu on a printer's card on the home page and choose **Share**. It only shows when remote access is on. Pick how long the link works:
 
 - **1 hour**, **1 day** or **7 days**
 - **until the print ends** &mdash; only offered while a print is running. The link turns itself off when the print finishes, is cancelled or fails.
@@ -56,8 +56,8 @@ The same section has a list of words that aren't allowed, one per line. A messag
 - `word*` blocks any word that starts with it, `*word` any word that ends with it, and `*word*` blocks it anywhere, even inside other words.
 - Capitals, accents, look-alikes (`1` for `i`, `0` for `o`, `@` for `a`) and spaces between letters (`b a d`) are caught.
 
-!!! note "Nightly for now"
-    Chat is on nightly and comes to stable with the next release. For viewers coming in through remote access, the relay also has to be updated, which happens when its repository is pushed.
+!!! note "Remote access viewers"
+    For viewers coming in through remote access, the relay also has to be updated, which happens when its repository is pushed.
 
 ## Who can see what
 

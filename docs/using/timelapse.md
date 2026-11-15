@@ -17,4 +17,8 @@ A timelapse starts with the print and the video is made when it ends. Prints wit
 
 ## Finding your videos
 
-Open the printer's **Timelapses** tab to watch, download or delete them. They're stored in Printer Buddy's `data/` folder.
+Open the printer's **Timelapse** tab. It has three panels:
+
+- **Timelapses** &mdash; your videos, to watch, download or delete. They're stored in Printer Buddy's `data/` folder.
+- **Timelapse Status** &mdash; whether a timelapse is recording now, and how many pictures it has so far.
+- **Timelapse Settings** &mdash; the mode, frame rate and how many to keep, from the table above. Changes apply to all printers from the next print.

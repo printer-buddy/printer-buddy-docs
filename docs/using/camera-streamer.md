@@ -35,14 +35,9 @@ Printer Buddy then sees the cameras through Moonraker like any other camera.
 !!! note
     The printer needs Debian-based Linux with `apt` and Python 3.9 or newer. A printer without `apt` can't run it; use the printer's own camera service there.
 
-!!! warning "New"
-    The printer install and the **light** level are new and have not been tested on a real printer yet.
-
 Cameras start at port 8081 so they don't clash with Printer Buddy on 8080.
 
 ## It replaces Crowsnest
 
 That's why the installer asks first. The streamer does the job of Crowsnest or any camera service already on the printer. The installer doesn't stop or remove the old service. If you switch to the streamer, stop the old one yourself so two camera services aren't running side by side.
 
-!!! note "Nightly for now"
-    The first question (whether to use the streamer at all) is on nightly and comes to stable with the next release.

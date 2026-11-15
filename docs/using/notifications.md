@@ -20,7 +20,7 @@ Started, paused, resumed, finished, failed, cancelled, went offline and Klipper 
 
 ## Setting them up
 
-1. Open **Settings → Alerts**.
+1. Open the home page's **Settings → Alerts**, or a printer's **Settings** tab under **Notifications**.
 2. Add a service and fill in its details (ntfy topic, Discord webhook URL…).
 3. Tick the events you want.
 4. Send a test to check it works.
