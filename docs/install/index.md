@@ -29,7 +29,7 @@ There are two ways to install Printer Buddy. Either way it talks to each printer
 
     - A host running Debian-based Linux (Raspberry Pi OS **64-bit**, Debian, Ubuntu…)
     - `git` and `python3` (the installer adds `python3-venv` if it's missing)
-    - Printers running Klipper + Moonraker on the same network
+    - Printers on the same network: Klipper + Moonraker, Bambu Lab or Elegoo Centauri Carbon (see [supported printers](../coming-soon.md#more-printers))
 
 ## How heavy is it?
 
@@ -68,9 +68,6 @@ It sets up a Python environment, downloads the parts you picked, creates the `pr
 ```
 http://<its-ip>:8080
 ```
-
-!!! note "Nightly for now"
-    The guided first run is on nightly and comes to stable with the next release. On stable, **1) Install** installs with the default choices. Use **2) Change setup** to change them first, or afterwards.
 
 ## Adding printers
 

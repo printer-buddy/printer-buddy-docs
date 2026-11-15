@@ -19,6 +19,15 @@ The installer downloads the parts into the main checkout: `ui/`, `app/core/notif
 - **nightly** &mdash; the default branch in the core, UI, notify and streamer repos, where development happens.
 - **main** &mdash; stable. The release workflow moves it forward when a version is released, so don't commit to it. The timelapse, relay and docs repos only have `main`.
 
+## Endpoints for other tools
+
+| Address | What it gives |
+|---|---|
+| `/metrics` | Prometheus text: each printer's connection, ready, printing and paused state, progress, print time, time left, and every heater and sensor temperature and target |
+| `/api/stats?days=30` | Every printer's print jobs since that many days ago (`0` = all), as JSON |
+
+Like the rest of the app, they have no login.
+
 ## Running it locally
 
 ```bash

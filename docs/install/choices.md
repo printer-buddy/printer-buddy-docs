@@ -14,7 +14,7 @@ The installer asks these when you install, and you can change them later with **
 
 ## Interface
 
-- **advanced** &mdash; dashboard, Quick View, each printer's status page, plus Control, Console, Files, History, list view and printer groups.
+- **advanced** &mdash; home page, Quick View, each printer's status page, plus Control, Console, Files, History, list view and printer groups.
 - **basic** &mdash; coming soon. It shows greyed out in the menu and can't be picked yet.
 
 ## AI detection
