@@ -29,6 +29,8 @@ Putting **Printer Buddy** itself on dev moves the core app to the newest code to
 
 Hold the name again and untick **Dev/beta builds**. The part goes back to its stable version.
 
+If the whole **Release channel** is nightly, every box is already ticked and can't be changed (it says "the whole channel is nightly"). The **AI model** has no dev/beta builds.
+
 ## Good to know
 
 !!! warning

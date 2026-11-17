@@ -21,8 +21,8 @@ Printer Buddy is made of parts that update separately:
 | **Interface** | The web pages |
 | **Notifications** | Alerts to ntfy, Discord, Telegram, Pushover and email |
 | **Timelapse** | Timelapse recording |
-| **Camera streamer** | Only if it's on |
-| **AI model** | Only if AI is on |
+| **Camera streamer** | Shows **off** when it isn't used; its menu turns it on |
+| **AI model** | Shows **off** when AI isn't on; its menu turns it on |
 
 ## The Updates list
 
@@ -30,14 +30,16 @@ Open **☰** on the home page and scroll to **Updates**. Each part shows the ins
 
 ## Update and Update all
 
-**Update** on a row updates that part; **Update all** does everything. Printer Buddy restarts when it's done and the page reloads by itself. Prints on the printers keep going.
+**Update** on a row updates that part; **Update all** does everything. Printer Buddy restarts when it's done and the page reloads by itself (a Camera streamer update only restarts the streamer). Prints on the printers keep going.
 
-Tier menus (Camera streamer tier, AI model) switch that part and download it straight away.
+While any printer is printing or paused, **Update**, **Update all**, the tier menus and **Dev/beta builds** are switched off, because the restart would lose that print's timelapse. They come back when the print ends.
+
+Tier menus (Notifications, Camera streamer and AI model) switch that part and download it straight away.
 
 ## Stable and nightly
 
 - **stable** &mdash; tested releases with version numbers (like v1.2.5).
-- **nightly** &mdash; built every day from the newest code; may have bugs.
+- **nightly** &mdash; built from the newest code; may have bugs.
 
 Stable is the default. Put a single part on nightly with [Dev/beta builds](dev-builds.md).
 
