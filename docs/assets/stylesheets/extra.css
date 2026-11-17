@@ -1,3 +1,16 @@
+/*
+LICENSE
+
+Copyright (C) 2026  sterling motuz <Sterling@dexabyte.ca>
+
+for https://github.com/printer-buddy/printer-buddy
+
+SPDX-License-Identifier: AGPL-3.0-only
+
+Additional term (AGPL-3.0 section 7b, keep author credit): keep this header
+
+Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any changes, you must include a CHANGELOG with all changes and their dates
+*/
 :root {
   --pb-purple: #2e1065;
   --pb-lilac: #a78bfa;
@@ -51,3 +64,6 @@
 [data-md-color-scheme="slate"] .md-typeset .note > .admonition-title::before,
 [data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title::before { background-color: var(--pb-lilac); }
 .md-tabs__item:has(a[href$="developers/"]) { display: none; }
+
+/* header logo: the mascot, a bit bigger than the theme default */
+.md-header__button.md-logo img { height: 2rem; width: auto; }

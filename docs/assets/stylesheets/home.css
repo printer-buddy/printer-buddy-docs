@@ -1,3 +1,16 @@
+/*
+LICENSE
+
+Copyright (C) 2026  sterling motuz <Sterling@dexabyte.ca>
+
+for https://github.com/printer-buddy/printer-buddy
+
+SPDX-License-Identifier: AGPL-3.0-only
+
+Additional term (AGPL-3.0 section 7b, keep author credit): keep this header
+
+Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any changes, you must include a CHANGELOG with all changes and their dates
+*/
 .pb-home {
   --pb-orange: #ff8a1f;
   --pb-purple: #2e1065;
@@ -11,6 +24,7 @@
 }
 
 .pb-hero { max-width: 52rem; margin: 0 auto; padding: 5.5rem 0 3.5rem; text-align: center; }
+.pb-hero-logo { display: block; width: 200px; height: auto; margin: 0 auto 1.5rem; }
 .pb-kicker { display: inline-block; margin: 0 0 1.2rem; padding: .3rem .9rem; border: 1px solid rgba(167, 139, 250, .5);
   border-radius: 99px; color: var(--pb-lilac); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .pb-hero h1 { margin: 0 0 1.2rem; color: #fff; font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; }

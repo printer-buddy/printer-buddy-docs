@@ -1,7 +1,19 @@
+#LICENSE
+#
+#Copyright (C) 2026  sterling motuz <Sterling@dexabyte.ca>
+#
+#for https://github.com/printer-buddy/printer-buddy
+#
+#SPDX-License-Identifier: AGPL-3.0-only
+#
+#Additional term (AGPL-3.0 section 7b, keep author credit): keep this header
+#
+#Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any changes, you must include a CHANGELOG with all changes and their dates
 # Project information
 site_name: Printer Buddy Docs
 site_url: https://printer-buddy.github.io/printer-buddy-docs
 site_author: sterling5241
+copyright: Copyright &copy; 2026 sterling motuz &middot; AGPL-3.0-only
 
 # Repository
 repo_name: printer-buddy/printer-buddy
@@ -12,6 +24,8 @@ theme:
   name: material
   custom_dir: custom/overrides
   language: en
+  logo: assets/images/logo-mascot.png
+  favicon: assets/images/favicon.png
 
   font:
     text: Inter
