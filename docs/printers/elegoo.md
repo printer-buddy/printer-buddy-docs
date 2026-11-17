@@ -26,7 +26,12 @@ Printer Buddy's built-in bridge runs the **Centauri Carbon (CC1)** and **Centaur
 | | CC1 | CC2 |
 |---|---|---|
 | Talks over | SDCP (port 3030) | MQTT (port 1883) |
-| Temperatures, fans, light and speed | Only with OpenCentauri firmware (`"extra_commands": true` for the printer) | Yes |
+| Temperatures, fans, light and speed | Only with OpenCentauri patched firmware: tick **OpenCentauri patched firmware** when you add it | Yes |
+
+## OpenCentauri
+
+- **OpenCentauri COSMOS** (CC1 or CC2) is a full Klipper firmware with Moonraker. Add the printer as a **Klipper** printer instead, and it gets everything a [Klipper printer](klipper.md) gets.
+- **OpenCentauri patched firmware** (CC1) still talks like Elegoo's own firmware. Add it as **Elegoo Centauri Carbon** and tick **OpenCentauri patched firmware**, so Printer Buddy can change temperatures, fans, light and speed. On Elegoo's own firmware those commands can crash the printer's software, so Printer Buddy doesn't send them.
 
 ## What it can't do
 

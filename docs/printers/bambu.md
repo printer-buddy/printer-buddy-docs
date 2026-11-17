@@ -15,7 +15,7 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 
 Printer Buddy runs Bambu Lab printers **fully locally**, over your own network. It doesn't use Bambu's cloud. Its built-in bridge talks to the printer directly and shows it with the same pages as a Klipper printer.
 
-**Models:** X1 Carbon, X1, X1E, P1P, P1S, P2S, A1 mini, A1, A2L, X2D, H2C, H2D, H2D Pro and H2S.
+**Models:** X1 Carbon, X1, X1E, P1P, P1S, P2S, A1 mini, A1, A2L, X2D, H2C, H2D, H2D Pro, H2S and H3C.
 
 ## What you get
 
@@ -36,7 +36,7 @@ Printer Buddy runs Bambu Lab printers **fully locally**, over your own network. 
 
 - **LAN only mode** and **Developer mode** turned on in the printer's settings. Without them the printer refuses commands from anything but Bambu's own apps.
 - The printer's **IP address**, **serial number** and **access code** (on the printer's screen).
-- On X1 and H2 models, **LAN liveview** on, for the camera.
+- On the X1, X1 Carbon, X1E, X2D, P2S, H2C, H2D, H2D Pro, H2S and H3C, **LAN liveview** on, for the camera. The A1, A1 mini, A2L, P1P and P1S don't need it.
 - Printer Buddy on a separate host on the same network (a Bambu printer can't run it).
 
 ## What it can't do
