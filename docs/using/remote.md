@@ -38,6 +38,7 @@ To make one, open the menu on a printer's card on the home page and choose **Sha
 Untick **Chat** if you want a link with no chat box at all. Then **Create link**, and **Copy** it. The list shows each link and when it stops working, and **Turn off** ends one straight away.
 
 The people you send it to see the printer's camera, progress, time left, layer and temperatures. They can't control anything. On the page, the full screen button in the corner of the camera fills the screen (double-click does the same) and the same button leaves it.
+
 ## Chat
 
 Everyone watching a printer through a share link can chat. The page has a **Chat** button next to the printer's name: click it to open the chat box, and click it again to close it. Each viewer types a name (it's remembered in their browser) and a message, and everyone watching that printer sees it, whichever of your links they used.
@@ -63,15 +64,12 @@ Next to **Send**, viewers have a **Flag** button for when they spot something th
 
 ### Blocked words
 
-The same section has a list of words that aren't allowed, one per line. A message or name containing one is refused and the viewer is told so, and they can't send or flag anything for 10 seconds. You see the attempt in your chat window, in grey, with the name and what they typed. Other viewers never see it, and you aren't sent a push for it. It's saved in `chat-blocklist.txt` next to the database, so you can edit that file instead if you prefer. On top of your list, a built-in list of common swear words, insults and slurs is blocked. Untick **Also block the built-in list** to turn it off. It can't catch every spelling, and it only blocks whole words, so ordinary words like "class" or "assist" are fine.
+The same section has a list of words that aren't allowed, one per line. A message or name containing one is refused and the viewer is told so, and they can't send or flag anything for 10 seconds. You see the attempt in your chat window, in grey, with the name and what they typed. Other viewers never see it, and you aren't sent a push for it. It's saved in `chat-blocklist.txt` next to the database, so you can edit that file instead if you prefer. On top of your list, a built-in list of common swear words, insults and slurs is blocked. Untick **Also block the built-in list of swear words and slurs** to turn it off. Changes to the alerts and the word list take effect when you press **Save**. It can't catch every spelling, and it only blocks whole words, so ordinary words like "class" or "assist" are fine.
 
 - `word` blocks that whole word only, `two words` blocks the phrase.
 - `word*` blocks any word that starts with it, `*word` any word that ends with it, and `*word*` blocks it anywhere, even inside other words.
 - Capitals, accents, look-alikes (`1` for `i`, `0` for `o`, `@` for `a`) and spaces between letters (`b a d`) are caught.
 
-!!! note "Remote access viewers"
-    For viewers coming in through remote access, the relay also has to be updated, which happens when its repository is pushed.
-
 ## Who can see what
 
-There's no login. Each share link has its own long, secret code, and **anyone with the link can see that printer**, so only send it to people you trust. Links can be set to expire, and you can delete a link any time to stop it working.
+There's no login. Each share link has its own long, secret code, and **anyone with the link can see that printer**, so only send it to people you trust. Links can be set to expire, and **Turn off** stops a link straight away.

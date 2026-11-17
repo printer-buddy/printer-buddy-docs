@@ -17,7 +17,7 @@ The home page shows every printer you've added.
 
 ## Printer cards
 
-Each card shows the printer's state (printing, paused, idle, offline, error), the file, progress, time left, nozzle and bed temperatures and the camera. Click a card to open its [printer page](printer-page.md).
+Each card shows the printer's state (printing, paused, idle, offline, error), the file, progress, time left, nozzle and bed temperatures and the camera. Its **Open** button opens the [printer page](printer-page.md), and **Quick View** opens it in a pop-up.
 
 ## Views and sorting
 
@@ -27,7 +27,7 @@ Each card shows the printer's state (printing, paused, idle, offline, error), th
 
 ## Quick View
 
-Open a printer in a pop-up without leaving the home page &mdash; handy for a quick look at the camera and progress.
+**Quick View** on a card opens the printer in a pop-up without leaving the home page &mdash; handy for a quick look at the camera and progress.
 
 ## Fleet Stats
 
@@ -36,7 +36,7 @@ The **Fleet Stats** panel adds up every printer's print history for the last 7, 
 - **Prints**, **Completed**, **Failed**, **Cancelled**, **Success rate**, **Print time** and **Filament**.
 - A table with the same numbers for each printer.
 - **Failed and cancelled**: the files that failed most, and a chart of prints started per hour of the day with the failed part in red.
-- The download button saves every print as a CSV file.
+- The download button saves the prints in the chosen time range as a CSV file.
 
 A printer that's offline isn't counted; the panel says which.
 

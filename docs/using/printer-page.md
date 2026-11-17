@@ -13,7 +13,7 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 -->
 # Printer page
 
-Click a printer on the home page to open its page. It's laid out like Fluidd, so if you know Fluidd you know where things are.
+Press **Open** on a printer's card on the home page to open its page. It's laid out like Fluidd, so if you know Fluidd you know where things are.
 
 ## Tabs and panels
 
@@ -21,7 +21,7 @@ The sidebar on the left holds the page's tabs. Each tab is made of panels.
 
 | Tab | What's on it |
 |---|---|
-| **Dashboard** | Status, camera, tool, macros, outputs, limits, thermals, console, jobs, G-code preview |
+| **Dashboard** | Status, spools, camera, tool, macros, outputs, limits, thermals, console, jobs, G-code preview, AI watch |
 | **Jobs** | The full Jobs file list, and the queue when something is queued |
 | **History** | Statistics and every past print |
 | **Tune** | Bed mesh, bed mesh controls, end stops, runout sensors, Beacon |
@@ -50,13 +50,14 @@ It's a digital zoom: the page enlarges the picture the camera sends, so you don'
 
 Moving and extruding, like Fluidd's Tool card.
 
-- **Arrows** move X, Y and Z by the distance picked under them. **Home** buttons home all axes, X or Y.
+- **Arrows** move X, Y and Z by the distance picked under them. **Home** buttons home all axes, X and Y, X, Y or Z.
 - **Position fields** show where the toolhead is. Type a value to move there; the button next to them switches between absolute and relative moves.
 - **Extrude length** and **speed**, then **Retract** or **Extrude**. The line under them shows how much filament that is and how fast.
 - **Z offset** with its step sizes, and a button to save it.
 - **Speed**, **Flow**, **Pressure advance** and **Smooth time** sliders. The arrow next to each puts it back to the printer's own value.
 - **FORCE_MOVE** only shows when `[force_move]` is in your config. It asks before turning it on.
-- **Tools** has more toolhead commands, and **Motors off**.
+- **Tools** has **Load filament**, **Unload filament**, **Clean nozzle**, **Park toolhead** and calibration commands.
+- **Motors off** shows when the printer is ready and homed. It asks first, and the axes need homing again after.
 
 Jog distances, speeds and inverted axes are in **Settings &rarr; Tool**.
 
@@ -77,7 +78,7 @@ Groups, locks and hidden macros are saved in your browser, for each printer.
 The Jobs panel lists the G-code files on the printer, like Fluidd's Jobs card.
 
 - **Click a column heading** to sort by name, last printed, modified or size. The column button picks which columns show.
-- **Click a file** for its menu: **Print**, **Add to Queue**, **Preview G-code**, **Download**, **Rename**, **Duplicate** and **Remove**. Click a folder to open it.
+- **Click a file** for its menu: **Print**, **Add to Queue**, **Preheat**, **Edit** or **View**, **Preview G-code**, **Download**, **Rename**, **Duplicate**, **Create zip**, **Refresh metadata** and **Remove** (some only show for files they apply to). Click a folder to open it.
 - The toolbar has thumbnail size, columns, **go to file**, a filter, **+** to upload or make a folder, refresh, and a search box.
 
 ## Job queue
@@ -105,7 +106,9 @@ Shows a print file layer by layer, in 2D or 3D.
 - **Runout Sensors** shows whether filament is detected, with a switch to turn each sensor on or off.
 - **Beacon** only shows on a printer with a Beacon probe: load, save or remove models, and **Calibrate**.
 
-A manual probe (from **Manual probe**, bed screws or Z calibration) opens a box where you step the nozzle down until a sheet of paper just drags, then **Accept**.
+A manual probe (from **Manual probe** or Z calibration) opens a box where you step the nozzle down until a sheet of paper just drags, then **Accept**.
+
+**Bed screws** opens its own box: turn the screw it names, then press **Adjusted**, or **Accept** when it's right. **Abort** stops.
 
 ## MMU and AMS
 
@@ -118,13 +121,36 @@ Type G-code and press **Send**.
 - **↑ / ↓** go through the commands you've sent. **Tab** completes a command or macro name.
 - Start typing to get suggestions for every command and macro Klipper knows.
 - The toolbar has **search**, **filters** (hide lines you don't care about, like temperature reports), **clear**, and a button that puts the newest lines at the top instead of the bottom.
-- **?** next to the title lists the console's keys and tricks.
+- **?** next to the title shows the console's keys when you hover over it.
+- Type `help` to open a searchable list of every command.
 - Click a line you sent to put it back in the box.
 
 ## History
 
 - **Statistics** adds up the printer's history: total jobs, longest job, total and average time, print time and filament. The cog shows time in days and length in kilometres; the bin resets the statistics (the list stays).
-- **History** lists every print. Search it, pick columns, **Load all**, **Remove all** (it asks first), download it as CSV, and click a print for its details, notes and **Reprint**.
+- **History** lists every print. Search it, pick columns, **Load all**, **Remove all** (it asks first), download it as CSV, open **Charts** and **Maintenance reminders**, and click a print for its details, notes and **Reprint**.
+
+## Configure
+
+**Config files** lists the printer's config folder. The menu at the top switches to **Config examples** or **Docs**, which you can only view.
+
+- **Click a file** to open it in the editor. Images open in a viewer.
+- **Right-click a file or folder** for **Edit**, **Rename**, **Duplicate**, **Download**, **Create zip** and **Delete**. Delete asks first.
+- **+ Add** makes a new file or folder, or uploads files or a whole folder. The toolbar also has a search box, **Filter**, **Go to file** and refresh. You can also drag files onto the list, and drag a file onto a folder to move it.
+- Tick several files to zip or delete them together.
+
+### The editor
+
+The editor opens full screen, with the file's name at the top and **● unsaved** when you have changes.
+
+- **Outline** lists every `[section]` in the file; click one to jump to it. Turn it off in the panel's settings.
+- **The minimap** on the right shows the whole file shrunk down. Click it to jump, or drag the grey band to scroll.
+- **Find** (Ctrl+F) searches the file, with **Replace** and **All** to replace the matches, and **Aa** to match capitals.
+- **Docs: [section]** opens Klipper's Config Reference for the section the cursor is in.
+- **Save** (Ctrl+S) saves the file. **Save &amp; restart** saves it and restarts Klipper, or Moonraker for Moonraker's files. It asks first and is off while printing.
+- **Tab** puts in two spaces. **Esc** or **&times;** closes the editor, and asks first if you have unsaved changes.
+
+The outline and the minimap are hidden on small screens.
 
 ## System
 
@@ -136,7 +162,7 @@ Type G-code and press **Send**.
 
 ## Settings
 
-General, theme, notifications, AI, console filters, macros, cameras, plate check, tool, thermal presets, G-code preview and updates, plus every panel's own options in one place.
+General, Theme, Notifications, AI Detection, Console, File Browser, Macros, Cameras, Plate Check, Tool, Thermal Presets, Gcode Preview, Updates, Other Card Options, Machine, Devices and About, plus every panel's own options in one place.
 
 ### Plate check
 
@@ -152,10 +178,12 @@ Warns you before printing on top of something left on the bed.
 | Button | What it does |
 |---|---|
 | **Save config** | Only shows when Klipper has unsaved changes &mdash; see below |
-| Theme | Light or dark |
-| Pause / Cancel | Pause or cancel the current print |
-| Emergency stop | Stops the printer immediately |
+| Theme | Switches between auto (follows your system), light and dark |
+| **Edit layout** | Add, move and remove panels and tabs |
+| **E-Stop** | Stops the printer immediately |
 | **☰** | The [printer drawer](drawers.md): restarts, host power, services |
+
+**Pause** and **Cancel** are on the **Printer Status** panel, at the top of the Dashboard.
 
 ## Errors and warnings
 

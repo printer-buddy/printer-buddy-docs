@@ -19,6 +19,8 @@ Printer Buddy's own models look at the printer's camera during prints and score 
 
 Spaghetti, warping, first-layer problems, stringing, blobs, cracks and other failures.
 
+Spaghetti, warping, first-layer problems and other failures trigger alerts (and auto-pause, if it's on). Stringing, blobs and cracks are only shown as warnings.
+
 ## Models
 
 | Model | Runs on | Notes |
@@ -30,10 +32,10 @@ Spaghetti, warping, first-layer problems, stringing, blobs, cracks and other fai
 !!! note "64-bit for basic and heavy"
     **basic** and **heavy** need a 64-bit system (Raspberry Pi OS 64-bit, or any x86_64 PC). **lite** runs on 32-bit systems too.
 
-!!! note "NVIDIA GPU (nightly builds for now)"
+!!! note "NVIDIA GPU"
     **heavy** can use an NVIDIA GPU. If the host has a working NVIDIA driver (`nvidia-smi` works), the installer sets up the GPU version of the AI libraries. The GPU also needs NVIDIA's CUDA and cuDNN libraries installed on the host; without them it runs on the CPU. **Settings → AI** shows what the model runs on.
 
-Pick one with **AI detection** in the installer. Every model release is tested on the same 1,000 photos; the scores are in each release's notes under **Model check**. With the v1.5 models, basic is right 93% of the time and catches 91% of failures; heavy is right 95% of the time with only 3% false alarms.
+Pick one with **AI detection** in the installer, or switch it later in the **Updates** list (home page ☰). Every model release is tested on the same 1,000 photos; the scores are in each release's notes under **Model check**. With the v1.5 models, basic is right 93% of the time and catches 91% of failures; heavy is right 95% of the time with only 3% false alarms.
 
 ## When it alerts
 
