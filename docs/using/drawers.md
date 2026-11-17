@@ -17,6 +17,8 @@ The **☰** button at the right of the top bar opens a drawer from the right. Cl
 
 ## On a printer page
 
+![The drawer on a printer page](../assets/images/screens/drawer.png)
+
 For **that printer**:
 
 - **Restart** &mdash; Klipper, Firmware (MCU reset), Moonraker.

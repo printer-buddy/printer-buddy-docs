@@ -15,9 +15,13 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 
 The home page shows every printer you've added.
 
+![The home page: Fleet, printer cards and Fleet Stats](../assets/images/screens/home.png)
+
 ## Printer cards
 
 Each card shows the printer's state (printing, paused, idle, offline, error), the file, progress, time left, nozzle and bed temperatures and the camera. Its **Open** button opens the [printer page](printer-page.md), and **Quick View** opens it in a pop-up.
+
+![A printer card with its menu open](../assets/images/screens/card-menu.png)
 
 ## Views and sorting
 

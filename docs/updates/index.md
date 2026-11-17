@@ -28,6 +28,8 @@ Printer Buddy is made of parts that update separately:
 
 Open **☰** on the home page and scroll to **Updates**. Each part shows the installed version and, if there's a newer one, what it updates to. Under **Printers** you'll also find each printer's own updates (Klipper, Moonraker, Fluidd…) from its Moonraker update manager.
 
+![The Updates list while a printer is printing](../assets/images/screens/updates.png)
+
 ## Update and Update all
 
 **Update** on a row updates that part; **Update all** does everything. Printer Buddy restarts when it's done and the page reloads by itself (a Camera streamer update only restarts the streamer). Prints on the printers keep going.

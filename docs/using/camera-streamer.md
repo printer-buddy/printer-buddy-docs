@@ -32,6 +32,8 @@ Pick it with **Camera streamer** in the installer's **2) Change setup**. It firs
 
 Each printer's cameras come from Moonraker. On a printer page, the camera panel's **Cameras** button adds or edits Moonraker cameras. In **Settings &rarr; Cameras** (**Camera Settings**) you can flip or rotate each one, and tick **Show this camera on the dashboard card** for the camera the AI and timelapses use.
 
+![Camera settings for a printer](../assets/images/screens/camera-settings.png)
+
 ## On the printer
 
 If the camera is plugged into the printer itself, run the streamer there. In **Change setup** pick **Camera streamer**, answer **Yes**, pick a level, then **The printer**. The installer offers two ways to install it:

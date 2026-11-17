@@ -87,6 +87,8 @@ Not a Klipper printer? In **Add by IP**, pick the **Printer type**:
 
 A printer running OpenCentauri COSMOS is added as **Klipper (Moonraker)**.
 
+![Add by IP with Bambu Lab picked](../assets/images/screens/add-by-ip.png)
+
 ## Port
 
 Printer Buddy uses port **8080**. If something else already has it (often the webcam streamer on Klipper boxes), the installer says what's using it and offers the next free port.

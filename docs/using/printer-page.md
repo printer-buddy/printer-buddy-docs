@@ -15,6 +15,8 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 
 Press **Open** on a printer's card on the home page to open its page. It's laid out like Fluidd, so if you know Fluidd you know where things are.
 
+![A printer's Dashboard while printing](../assets/images/screens/dashboard.png)
+
 ## Tabs and panels
 
 The sidebar on the left holds the page's tabs. Each tab is made of panels.
@@ -50,6 +52,8 @@ It's a digital zoom: the page enlarges the picture the camera sends, so you don'
 
 Moving and extruding, like Fluidd's Tool card.
 
+![The Tool panel](../assets/images/screens/tool.png)
+
 - **Arrows** move X, Y and Z by the distance picked under them. **Home** buttons home all axes, X and Y, X, Y or Z.
 - **Position fields** show where the toolhead is. Type a value to move there; the button next to them switches between absolute and relative moves.
 - **Extrude length** and **speed**, then **Retract** or **Extrude**. The line under them shows how much filament that is and how fast.
@@ -65,6 +69,8 @@ Jog distances, speeds and inverted axes are in **Settings &rarr; Tool**.
 
 The macros panel shows each of your printer's macros as a button, in groups.
 
+![The Macros panel with AFC and IFS groups](../assets/images/screens/macros.png)
+
 - **Click a macro** to run it. A macro that takes values has a small arrow next to it: click the arrow to open a box with a field for each value, then **Send**. The name button runs it without values.
 - **Hide some&hellip;** shows an &times; on each button so you can hide the ones you never use. **Show hidden** brings them back.
 - **The gear** on a group's heading opens **Organize**, where you put macros in groups you name, such as Calibration or Camera. The arrow on the heading folds the group. Macros without a group are under **Uncategorized**.
@@ -76,6 +82,8 @@ Groups, locks and hidden macros are saved in your browser, for each printer.
 ## Jobs
 
 The Jobs panel lists the G-code files on the printer, like Fluidd's Jobs card.
+
+![The Jobs panel with a file's menu open](../assets/images/screens/jobs-menu.png)
 
 - **Click a column heading** to sort by name, last printed, modified or size. The column button picks which columns show.
 - **Click a file** for its menu: **Print**, **Add to Queue**, **Preheat**, **Edit** or **View**, **Preview G-code**, **Download**, **Rename**, **Duplicate**, **Create zip**, **Refresh metadata** and **Remove** (some only show for files they apply to). Click a folder to open it.
@@ -143,6 +151,8 @@ Type G-code and press **Send**.
 
 The editor opens full screen, with the file's name at the top and **● unsaved** when you have changes.
 
+![The config editor with the Outline and minimap](../assets/images/screens/config-editor.png)
+
 - **Outline** lists every `[section]` in the file; click one to jump to it. Turn it off in the panel's settings.
 - **The minimap** on the right shows the whole file shrunk down. Click it to jump, or drag the grey band to scroll.
 - **Find** (Ctrl+F) searches the file, with **Replace** and **All** to replace the matches, and **Aa** to match capitals.
@@ -153,6 +163,8 @@ The editor opens full screen, with the file's name at the top and **● unsaved*
 The outline and the minimap are hidden on small screens.
 
 ## System
+
+![The System tab](../assets/images/screens/system.png)
 
 - **System Overview** shows the printer's computer (hostname, OS, CPU, memory, network) with **Restart Klipper**, **Firmware Restart** and the log downloads. Its buttons open **Devices** (serial, USB, CAN and camera IDs) and roll the logs over.
 - **SD Card Information** and **Disk Information** (used and free space for each folder).
@@ -174,6 +186,8 @@ Warns you before printing on top of something left on the bed.
 **Sensitivity** sets how much has to change. **Test now** checks it straight away. It only checks prints started from Printer Buddy, needs a camera that sees the bed, and needs a new picture if the camera or light changes a lot.
 
 ## Top bar
+
+![The printer page's top bar](../assets/images/screens/top-bar.png)
 
 | Button | What it does |
 |---|---|

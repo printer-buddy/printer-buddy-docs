@@ -37,7 +37,11 @@ To make one, open the menu on a printer's card on the home page and choose **Sha
 
 Untick **Chat** if you want a link with no chat box at all. Then **Create link**, and **Copy** it. The list shows each link and when it stops working, and **Turn off** ends one straight away.
 
+![The Share window](../assets/images/screens/share-window.png)
+
 The people you send it to see the printer's camera, progress, time left, layer and temperatures. They can't control anything. On the page, the full screen button in the corner of the camera fills the screen (double-click does the same) and the same button leaves it.
+
+![A share link as a viewer sees it, with the chat open](../assets/images/screens/share-page.png)
 
 ## Chat
 

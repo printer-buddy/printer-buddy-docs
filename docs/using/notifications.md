@@ -39,3 +39,5 @@ Started, paused, resumed, finished, failed, cancelled, went offline mid-print an
 4. **Save**, then **Send test** (or a service's own button, such as **Send test to Telegram**) to check it works.
 
 To silence one printer, open the menu on its card and switch **Notifications** off.
+
+![Settings, Alerts](../assets/images/screens/notifications.png)

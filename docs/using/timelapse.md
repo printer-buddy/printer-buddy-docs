@@ -39,3 +39,5 @@ Open the printer's **Timelapse** tab. It has three panels:
 - **Timelapses** &mdash; your videos, to watch, download or delete. They're stored in Printer Buddy's `data/` folder.
 - **Timelapse Status** &mdash; whether a timelapse is recording now, and how many pictures it has so far.
 - **Timelapse Settings** &mdash; when to take a picture, the video speed and how many to keep, from the table above. Changes apply to all printers from the next print.
+
+![The Timelapse tab](../assets/images/screens/timelapse.png)

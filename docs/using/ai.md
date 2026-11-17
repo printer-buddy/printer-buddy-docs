@@ -52,9 +52,13 @@ Higher threshold or more checks in a row = fewer false alarms, but a failure is 
 
 Per printer (AI watch on the printer page) you choose **Alert only**, **Alert + auto-pause** or **Off**.
 
+![The AI watch panel with its score history](../assets/images/screens/ai-watch.png)
+
 ## The failure box
 
 When the AI thinks something's wrong, a red box on the camera shows where. **Box: on failure** (default) only works it out when a failure is likely; **Box: always** draws it on every check (uses more CPU). Turn both off to save CPU on older Pis.
+
+![The red failure box around spaghetti](../assets/images/screens/ai-box.png)
 
 ## Score history
 
