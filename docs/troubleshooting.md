@@ -21,7 +21,7 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 
 ## Klipper errors
 
-The **Klippy** card at the top of the printer page shows Klipper's error. Fix what it says (often a typo in `printer.cfg`), then press **Restart Klipper** (or **Firmware Restart** for an MCU error). If Klipper isn't connected at all, restart the Klipper service from the **☰** drawer, then look at `klippy.log` (download button on the card).
+The **Klippy** card at the top of the printer page shows Klipper's error. Fix what it says (often a typo in `printer.cfg`), then press **Restart Klipper** (or **Firmware Restart** for an MCU error). If Klipper isn't connected at all, the card's **Restart Klipper** restarts the Klipper service; then look at `klippy.log` (download button on the card). The card only shows when Klipper has an error or a warning.
 
 ## An update failed
 
@@ -47,5 +47,5 @@ Something else took port 8080. Run `./install.sh`, pick **P) Change port** and c
 | Log | Where |
 |---|---|
 | Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host, or **5) Show logs** in the installer |
-| Klipper | `klippy.log` &mdash; on the **Klippy** card, or **System → System Overview** |
-| Moonraker | `moonraker.log` &mdash; on the **Klippy** card, or **System → System Overview** |
+| Klipper | `klippy.log` &mdash; **System → System Overview**, or the **Klippy** card when there's an error |
+| Moonraker | `moonraker.log` &mdash; **System → System Overview**, or the **Klippy** card when there's an error |
