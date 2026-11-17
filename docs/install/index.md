@@ -13,7 +13,7 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 -->
 # Install
 
-There are two ways to install Printer Buddy. Either way it talks to each printer's Moonraker over the network, and the install steps are the same.
+There are two ways to install Printer Buddy. Either way it talks to your printers over the network (Klipper printers through Moonraker, Bambu Lab and Elegoo printers directly), and the install steps are the same.
 
 === "On a printer"
 
@@ -42,21 +42,10 @@ There are two ways to install Printer Buddy. Either way it talks to each printer
 
     - A host running Debian-based Linux (Raspberry Pi OS **64-bit**, Debian, Ubuntu…)
     - `git` and `python3` (the installer adds `python3-venv` if it's missing)
-    - Printers on the same network: Klipper + Moonraker, Bambu Lab or Elegoo Centauri Carbon (see [supported printers](../coming-soon.md#more-printers))
+    - Printers on the same network: Klipper + Moonraker, Bambu Lab, or Elegoo Centauri Carbon (CC1 or CC2) (see [supported printers](../coming-soon.md#more-printers))
 
-## How heavy is it?
-
-Readings from real setups. More coming as members send theirs.
-
-| Host | Setup | Printers | Memory | CPU idle | CPU printing | Disk |
-|---|---|---|---|---|---|---|
-| Raspberry Pi 4 | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; |
-| Raspberry Pi 5 | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; |
-| On a printer | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; |
-| x86 PC / server | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; | &mdash; |
-
-!!! tip "AI detection needs 64-bit"
-    The AI models need a 64-bit system (`aarch64` or `x86_64`). On a Pi, use Raspberry Pi OS (64-bit). Everything else works on 32-bit, and a 32-bit version of the lite AI model is planned.
+!!! tip "AI on 32-bit"
+    The **basic** and **heavy** AI models need a 64-bit system (`aarch64` or `x86_64`); on a Pi, use Raspberry Pi OS (64-bit). The **lite** model and everything else work on 32-bit too.
 
 ## Install it
 
@@ -70,7 +59,7 @@ cd printer-buddy
 
 The first time you run it, the installer welcomes you and walks through the setup choices one at a time, from **Step 1 of 7** to **Step 7 of 7** (see [Install choices](choices.md)). Enter keeps the suggested answer for any step. At the end it asks **Install Printer Buddy now? [Y/n]**.
 
-After that, every run opens a menu. Pick **1) Install** to install or reinstall, **2) Change setup** to change a choice, and so on. To install with the defaults and no questions:
+After that, every run opens a menu. Pick **1) Install** to install or reinstall, **2) Change setup** to change a choice, and so on. To install with no questions, keeping your current setup (or the defaults on a first install):
 
 ```bash
 ./install.sh -y
@@ -90,6 +79,14 @@ http://<its-ip>:8080
 
 Printer not found? Use **Add by IP** and type its address (and port, if it isn't 7125).
 
+Not a Klipper printer? In **Add by IP**, pick the **Printer type**:
+
+- **Bambu Lab (needs LAN mode)**: its IP address, **Serial number** and **Access code** (on the printer's screen).
+- **Elegoo Centauri Carbon**: only its IP address. Printer Buddy finds the rest. Tick **OpenCentauri patched firmware** if it runs that ([more](../printers/elegoo.md#opencentauri)).
+- **Elegoo Centauri Carbon 2**: its IP address, **Serial number** and **Access code** (on the printer's screen), with LAN mode on.
+
+A printer running OpenCentauri COSMOS is added as **Klipper (Moonraker)**.
+
 ## Port
 
 Printer Buddy uses port **8080**. If something else already has it (often the webcam streamer on Klipper boxes), the installer says what's using it and offers the next free port.
@@ -97,5 +94,5 @@ Printer Buddy uses port **8080**. If something else already has it (often the we
 Change it later with **P) Change port** in the installer menu, or:
 
 ```bash
-./install.sh -y --port 8081
+./install.sh -y --port 8090
 ```

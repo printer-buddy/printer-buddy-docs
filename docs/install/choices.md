@@ -18,7 +18,7 @@ The installer asks these when you install, and you can change them later with **
 | Choice | Options (first = default) |
 |---|---|
 | Interface | advanced (basic is coming soon) |
-| AI detection | off, basic, heavy |
+| AI detection | off, lite, basic, heavy |
 | Video | snapshots, live, timelapse |
 | Notifications | basic, advanced |
 | Remote access | off, on |
@@ -33,6 +33,7 @@ The installer asks these when you install, and you can change them later with **
 ## AI detection
 
 - **off** &mdash; no failure detection.
+- **lite** &mdash; the smallest model; uses very little memory and runs on 32-bit too, a bit less accurate.
 - **basic** &mdash; light model that runs on a Pi.
 - **heavy** &mdash; bigger, more accurate model; needs a strong PC or a GPU.
 
@@ -56,7 +57,7 @@ See [AI failure detection](../using/ai.md).
 
 ## Camera streamer
 
-In **2) Change setup** the installer first asks **Use Printer Buddy's camera streamer? It replaces Crowsnest (or any camera service already on the printer).** Answer **No** to keep what you have (the same as the old **off**), or **Yes** to pick a level:
+The installer (on the first run, or in **2) Change setup**) first asks **Use Printer Buddy's camera streamer? It replaces Crowsnest (or any camera service already on the printer).** Answer **No** to keep what you have (this is **off**), or **Yes** to pick a level:
 
 - **light** &mdash; USB cameras, MJPEG (mjpg-streamer).
 - **basic** &mdash; USB cameras, MJPEG (ustreamer).

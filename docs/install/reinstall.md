@@ -17,7 +17,7 @@ Everything here is in the installer menu: run `./install.sh` in the Printer Budd
 
 ## Reinstall
 
-**1) Reinstall** runs the whole install again with your current setup. Your printers and settings are kept &mdash; they live in `data/` and `printer-buddy.env`, which the installer never overwrites.
+**1) Reinstall** runs the whole install again with your current setup. Your printers and settings are kept: the installer never touches `data/`, and in `printer-buddy.env` it only writes your setup choices and the port.
 
 Use it if something got broken or after changing a lot by hand.
 
@@ -33,9 +33,12 @@ Use it if something got broken or after changing a lot by hand.
 
 ## Uninstall
 
-**6) Uninstall** stops and removes the Printer Buddy service. It then asks, one at a time, whether to also delete:
+**6) Uninstall** first asks **Stop and remove the Printer Buddy service?**, then:
 
-- the Python environment (`.venv`)
-- your printers and settings (`data/`) &mdash; make a backup first if you're unsure
+- removes the service and its entry in Moonraker's service list
+- asks whether to also remove the **camera streamer**, if it's installed (cameras it serves will stop)
+- removes the **share-link tunnel**, if one is set up (it asks first)
+- removes Printer Buddy's root helper and its sudo rule
+- asks, one at a time, whether to also delete the Python environment (`.venv`) and your printers and settings (`data/`). Make a backup first if you're unsure.
 
-The Printer Buddy folder itself stays; delete it by hand if you want it gone completely.
+System packages it may have installed (ffmpeg, cloudflared, ustreamer, go2rtc) are kept, since other programs can use them. The Printer Buddy folder itself stays; delete it by hand if you want it gone completely.
