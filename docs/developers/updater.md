@@ -23,6 +23,8 @@ python3 app/core/updater.py parts      # download the parts
 python3 app/core/updater.py ai         # AI libraries and model
 python3 app/core/updater.py streamer   # download and set up the camera streamer
 python3 app/core/updater.py packages   # system packages the chosen features need
+python3 app/core/updater.py core       # core only (git)
+python3 app/core/updater.py after      # everything after core: parts, Python packages, AI, streamer, system packages
 ```
 
 It only uses Python's standard library, so it works before the virtual environment exists.
@@ -46,4 +48,4 @@ The installer updates the helper; the app can't change it.
 | `PB_CHANNEL` | `stable` or `nightly` for everything |
 | `PB_NIGHTLY` | Parts on dev/beta builds, e.g. `ui,streamer` |
 
-Core follows the `main` branch on stable and `nightly` on nightly.
+Core follows `main` on stable and `nightly` on nightly, or when core is in `PB_NIGHTLY`. If another branch is checked out, it stays on that branch.
