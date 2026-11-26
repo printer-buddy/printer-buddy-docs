@@ -53,7 +53,7 @@ Answer: `{"ids": [{"id": "...", "key": "..."}, ...]}`, the same 50 every time.
 | `meta` | no | an object; `meta.model` (1 to 40 letters, numbers, `.`, `_` or `-`) and `meta.score` (a number) are used |
 
 ```bash
-{ printf '{"id": "<box ID>", "key": "<box key>", "label": "ok", "image": "'; base64 -w0 photo.jpg; printf '"}'; } |
+{ printf '{"id": "<box ID>", "key": "<box key>", "label": "ok", "image": "'; base64 < photo.jpg | tr -d '\n'; printf '"}'; } |
   curl -s -X POST https://www.printerbuddy.stream/api/contribute -H 'content-type: application/json' --data-binary @-
 ```
 
