@@ -26,7 +26,7 @@ Printer Buddy's camera streamer is a replacement for crowsnest and camera-stream
 
 Any number of cameras at every level.
 
-Pick it with **Camera streamer** in the installer's **2) Change setup**. It first asks whether you want to use it at all, then a level, then where the camera is plugged in (see [Install choices](../install/choices.md#camera-streamer)), or switch tiers in the **Updates** list (home page ☰). It runs as its own service, `printer-buddy-streamer`, which you can restart or stop from the home page ☰ drawer.
+Pick it with **Camera streamer** in `./install.sh --setup`. It first asks whether you want to use it at all, then a level, then where the camera is plugged in (see [Install choices](../install/choices.md#camera-streamer)), or switch tiers in the **Updates** list (home page ☰). It runs as its own service, `printer-buddy-streamer`, which you can restart or stop from the home page ☰ drawer.
 
 ## Cameras
 
@@ -36,7 +36,7 @@ Each printer's cameras come from Moonraker. On a printer page, the camera panel'
 
 ## On the printer
 
-If the camera is plugged into the printer itself, run the streamer there. In **Change setup** pick **Camera streamer**, answer **Yes**, pick a level, then **The printer**. The installer offers two ways to install it:
+If the camera is plugged into the printer itself, run the streamer there. Run `./scripts/printer-streamer.sh light`, `basic` or `advanced`, or in `./install.sh --setup` pick **Camera streamer**, answer **Yes**, pick a level, then **The printer**. It offers two ways to install it:
 
 - **Copy and paste** &mdash; it shows one command to run over SSH on the printer, for example `curl -fsSL https://raw.githubusercontent.com/printer-buddy/print-buddy-streamer/main/install-printer.sh | bash -s -- basic`.
 - **Guided SSH** &mdash; it asks for the printer's IP and login user (default `pi`) and runs the same command over SSH. SSH asks for the printer's password; nothing is saved.

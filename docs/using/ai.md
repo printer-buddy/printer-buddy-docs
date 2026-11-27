@@ -73,3 +73,13 @@ By default the AI looks at the whole picture. To make it ignore clutter around t
 - When it alerts, answer **Was it really a failure?** &mdash; false alarms are the most useful.
 - **Save for AI…** saves the current camera view with a label.
 - **Settings → AI** shows saved photos and how often the AI was right on your printers. Turn on **Help improve the AI** to send labelled photos for training.
+
+**Nothing leaves your box** unless you turn on **Help improve the AI**. If you do:
+
+- only **labelled** photos are sent, one at a time, at most 50 a day
+- each is shrunk to 640 px and re-saved, so no location or camera details
+- sent with your **box number** (the random ID in your share links), the label, how bad it was, and what the AI scored at the time; **not** your name, address or printer list (your internet address is only used to count the daily limit for 2 days and is never stored with the photo)
+- they go to a **private** dataset used only to train Printer Buddy's AI models
+- once sent, the photo is deleted from your box; turn it off any time and nothing more is sent
+
+Photos show whatever your printer camera sees, so keep people and private things out of its view.

@@ -56,4 +56,4 @@ cd printer-buddy
 ./update.sh
 ```
 
-Or run `./install.sh` and pick **3) Update**. The installer's Update also refreshes things the app can't do on its own (like Printer Buddy's root helper), so run it once if an update tells you to.
+`./update.sh` also refreshes things the app can't do on its own (like Printer Buddy's root helper), so run it once if an update tells you to.

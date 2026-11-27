@@ -57,6 +57,6 @@ Printer Buddy is licensed under the GNU Affero General Public License v3.0 only 
 git clone https://github.com/printer-buddy/printer-buddy.git
 cd printer-buddy
 python3 app/core/updater.py parts      # download the parts
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+python3 -m venv .venv && .venv/bin/pip install -r requirements/core.txt
 .venv/bin/uvicorn app.main:app --port 8080
 ```

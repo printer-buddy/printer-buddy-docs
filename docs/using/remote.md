@@ -17,9 +17,9 @@ By default Printer Buddy only works on your home network. Remote access lets you
 
 ## Turning it on
 
-Pick **Remote access = on** in **2) Change setup** and go back. The installer then installs a secure tunnel (`cloudflared`), registers it and starts it.
+Run `./scripts/remote.sh on` in the Printer Buddy folder (or pick **Remote access = on** in `./install.sh --setup`). It installs a secure tunnel (`cloudflared`), registers it and starts it.
 
-Turn it **off** again and the installer asks whether to remove the tunnel. Share links stop working from outside once it's removed.
+`./scripts/remote.sh off` removes the tunnel. Share links stop working from outside once it's removed.
 
 ## Share links
 

@@ -59,7 +59,7 @@ cd printer-buddy
 
 The first time you run it, the installer welcomes you and walks through the setup choices one at a time, from **Step 1 of 7** to **Step 7 of 7** (see [Install choices](choices.md)). Enter keeps the suggested answer for any step. At the end it asks **Install Printer Buddy now? [Y/n]**.
 
-After that, every run opens a menu. Pick **1) Install** to install or reinstall, **2) Change setup** to change a choice, and so on. To install with no questions, keeping your current setup (or the defaults on a first install):
+After that, `./install.sh` reinstalls with your current setup, and `./install.sh --setup` changes a choice. To install with no questions, keeping your current setup (or the defaults on a first install):
 
 ```bash
 ./install.sh -y
@@ -93,8 +93,8 @@ A printer running OpenCentauri COSMOS is added as **Klipper (Moonraker)**.
 
 Printer Buddy uses port **8080**. If something else already has it (often the webcam streamer on Klipper boxes), the installer says what's using it and offers the next free port.
 
-Change it later with **P) Change port** in the installer menu, or:
+Change it later with:
 
 ```bash
-./install.sh -y --port 8090
+./scripts/port.sh 8090
 ```

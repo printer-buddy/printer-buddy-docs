@@ -26,7 +26,7 @@ The **Klippy** card at the top of the printer page shows Klipper's error. Fix wh
 ## An update failed
 
 - The Updates list shows the error. Try again &mdash; a dropped connection is the usual cause.
-- If it says to run the installer's Update, do that once: `./install.sh` → **3) Update**.
+- If it says to run `./update.sh`, do that once.
 - Still stuck? Reset the code to the latest release and update again:
 
 ```bash
@@ -40,12 +40,12 @@ This only resets the code. Your printers and settings in `data/` and `printer-bu
 
 ## Port already in use
 
-Something else took port 8080. Run `./install.sh`, pick **P) Change port** and choose a free one.
+Something else took port 8080. Move Printer Buddy to a free one with `./scripts/port.sh <number>`.
 
 ## Logs
 
 | Log | Where |
 |---|---|
-| Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host, or **5) Show logs** in the installer |
+| Printer Buddy | `journalctl -u printer-buddy -f` on Printer Buddy's host |
 | Klipper | `klippy.log` &mdash; **System → System Overview**, or the **Klippy** card when there's an error |
 | Moonraker | `moonraker.log` &mdash; **System → System Overview**, or the **Klippy** card when there's an error |

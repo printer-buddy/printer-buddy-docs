@@ -13,7 +13,7 @@ Additional term (AGPL-3.0 section 7c, mark changed versions): if you make any ch
 -->
 # Install choices
 
-The installer asks these when you install, and you can change them later with **2) Change setup**. They're saved in `printer-buddy.env` in the Printer Buddy folder.
+The installer asks these when you install, and you can change them later with `./install.sh --setup`. They're saved in `printer-buddy.env` in the Printer Buddy folder.
 
 | Choice | Options (first = default) |
 |---|---|
@@ -28,7 +28,7 @@ The installer asks these when you install, and you can change them later with **
 ## Interface
 
 - **advanced** &mdash; home page, Quick View, each printer's status page, plus Control, Console, Files, History, list view and printer groups.
-- **basic** &mdash; coming soon. It shows greyed out in the menu and can't be picked yet.
+- **basic** &mdash; coming soon. It shows greyed out in the setup questions and can't be picked yet.
 
 ## AI detection
 
@@ -57,7 +57,7 @@ See [AI failure detection](../using/ai.md).
 
 ## Camera streamer
 
-The installer (on the first run, or in **2) Change setup**) first asks **Use Printer Buddy's camera streamer? It replaces Crowsnest (or any camera service already on the printer).** Answer **No** to keep what you have (this is **off**), or **Yes** to pick a level:
+The installer (on the first run, or in `./install.sh --setup`) first asks **Use Printer Buddy's camera streamer? It replaces Crowsnest (or any camera service already on the printer).** Answer **No** to keep what you have (this is **off**), or **Yes** to pick a level:
 
 - **light** &mdash; USB cameras, MJPEG (mjpg-streamer).
 - **basic** &mdash; USB cameras, MJPEG (ustreamer).
@@ -74,7 +74,7 @@ If the camera is on the printer, the installer shows how to install the streamer
 
 You can also put single parts on nightly &mdash; see [Dev/beta builds](../updates/dev-builds.md).
 
-## Setting them without the menu
+## Setting them without the questions
 
 Every choice has a command-line flag:
 
